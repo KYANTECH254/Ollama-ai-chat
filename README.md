@@ -1,5 +1,5 @@
 # Ollama AI Interface Tutorial Documentation
-> Build and customize your own ChatGPT-like web app using Next.js.
+> Build and customize your own Deepseek-like web app using Next.js.
 
 ## Overview
 The application uses the following components:
@@ -27,7 +27,7 @@ The application uses the following components:
 
 #### Model Selection (Optional)
 
-The current implementation of the application uses the "gpt-3.5-turbo" model for chat interactions. This model provides excellent performance for a wide range of tasks and is the recommended choice for most use cases.
+The current implementation of the application uses the "deepseek-r1:1.5b, deepseek-r1:8b & ollama" model for chat interactions.
 
 You can change the model used in the application by modifying the `createMessage` function in the `/src/pages/api/createMessage.js` file or using the context provider for models `contexts/ModelContext.tsx`:
 
@@ -41,8 +41,6 @@ You can change the model used in the application by modifying the `createMessage
       }),
     });
 ``` 
-
-Remember that the performance, response time, and pricing for different models may vary. Please refer to the OpenAI API documentation for more information on available models and their specific capabilities.
 
 Feel free to modify the code and styles to fit your specific needs. The application uses Tailwind CSS for styling, making it easy to customize the design by modifying the `/src/styles/tailwind.css` and `/src/styles/globals.css` files.
 
